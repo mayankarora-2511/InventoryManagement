@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+}
+
+.sidebar {
+    width: 17%;
+    height: 100vh;
+    position: fixed;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar img {
+    display: block;
+    margin: 5% 5% auto;
+    padding-bottom: 20px;
+    width: 90%;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px 25px;
+    color: #000;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+}
+.sidebar .manage{
+    background-color: #E0E7FF;
+}
+
+
+.sidebar a:hover{
+    background-color: #E0E7FF;
+}
+
+.sidebar a i {
+    margin-right: 10px;
+}
+.sidebar .sidebar-drop:hover .sidebar-dropdown{
+    display: block;
+}
+.sidebar-dropdown {
+    display: none;
+    position: absolute;
+    /* right: 0;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    top: 25px;
+    z-index: 1;
+    border-radius: 5px; */
+    background-color: #fff;
+    margin-left: 50%;
+}
+.content {
+    margin-left: 20%;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header .welcome {
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.header .user-info {
+    display: flex;
+    align-items: center;
+}
+
+.header .user-info i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.header .user-info span {
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+}
+
+.header .user-info span:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    top: 25px;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown a {
+    padding: 10px 15px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown a:last-child {
+    border-bottom: none;
+}
+
+.dropdown a:hover {
+    background-color: #f5f5f5;
+}
+.container {
+    max-width: 30%; /* Width of the form container */
+    margin: 3% auto; /* Centering the container */
+    padding: 20px; /* Padding for the container */
+    background-color: #fff; /* White background for form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.logo_block {
+    position: absolute;
+    padding: 0;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+
+.logo {
+    width: 20%;
+    height: auto;
+}
+
+.form {
+    margin: 0 auto;
+    width: 60%;
+    padding-bottom: 10px;
+}
+
+.form h3 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Margin below labels */
+    font-size: small;
+    color: darkslategrey;
+    font-weight: 550;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding inside inputs */
+    margin-bottom: 20px; /* Space below inputs */
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+}
+input[type="number"]{
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding inside inputs */
+    margin-bottom: 20px; /* Space below inputs */
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+}
+#email{
+    text-align: center;
+    font-size: small;
+}
+
+.account-link {
+    margin-top: -5px;
+    margin-bottom: 10px; /* Space below the link */
+    font-size: small;
+}
+
+.account-link a {
+    color: #1aa4ce; /* Link color */
+    text-decoration: none; /* No underline */
+}
+
+.submit-button {
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding inside button */
+    margin: 15px auto;
+    background: linear-gradient(to bottom, #1aa4ce, #2772b7); /* Vertical linear gradient */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.submit-button:hover {
+    background: linear-gradient(to bottom, #1a8bcf, #226fa5); /* Darker gradient on hover */
+}
+
+footer {
+    text-align: center;
+    bottom: 8px;
+    font-size: 14px;
+    position: relative;
+}

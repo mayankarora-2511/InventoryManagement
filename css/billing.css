@@ -1,0 +1,330 @@
+/* Existing Styles */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+}
+
+.sidebar {
+    width: 17%;
+    height: 100vh;
+    position: fixed;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar img {
+    display: block;
+    margin: 5% 5% auto;
+    padding-bottom: 20px;
+    width: 90%;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px 25px;
+    color: #000;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background-color: #E0E7FF;
+}
+
+.sidebar a i {
+    margin-right: 10px;
+}
+.sidebar .sidebar-drop:hover .sidebar-dropdown{
+    display: block;
+}
+.sidebar-dropdown {
+    display: none;
+    position: absolute;
+    /* right: 0;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    top: 25px;
+    z-index: 1;
+    border-radius: 5px; */
+    background-color: #fff;
+    margin-left: 50%;
+}
+
+.content {
+    margin-left: 20%;
+    padding: 20px;
+}
+.metrics {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.metrics .box {
+    width: 20%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 100px;
+}
+
+.metrics .box h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+    margin: auto;
+}
+#profit{
+    margin-bottom: 10px;
+}
+.metrics .box p {
+    font-size: 20px;
+    margin: 10px 0 0 0;
+    font-weight: bold;
+    color: black;
+    
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header .welcome {
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.header .user-info {
+    display: flex;
+    align-items: center;
+}
+
+.header .user-info i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.header .user-info span {
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+}
+
+.header .user-info span:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    top: 25px;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown a {
+    padding: 10px 15px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown a:last-child {
+    border-bottom: none;
+}
+
+.dropdown a:hover {
+    background-color: #f5f5f5;
+}
+
+
+.active {
+    background-color: #717171;
+}
+.tables {
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 20px;
+    width: 100%;
+}
+
+.table {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 20px);
+    overflow: hidden;
+    width: 100%;
+}
+
+.table h2 {
+    margin: 0;
+    padding: 15px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: 550;
+    border-bottom: 1px solid #ddd;
+}
+
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table tbody {
+    display: block; /* Set tbody as block to enable scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.table thead,
+.table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed; /* Fix the layout of table cells */
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table td {
+    font-size: 14px;
+}
+
+.table td:nth-child(5) {
+    font-weight: bold;
+}
+.signin-button {
+    width: 50%; /* Full width */
+    padding: 10px; /* Padding inside button */
+    margin: 15px auto;
+    background: linear-gradient(to bottom, #1aa4ce, #2772b7); /* Vertical linear gradient */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; 
+}
+.button-div{
+    display: flex;
+    width: 50%;
+    margin: 20px auto ;
+}
+.add-products{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 400px;
+    height: max-content;
+    padding: 20px;
+} 
+.add-products label{
+        display: block; /* Block display for labels */
+        margin-bottom: 5px; /* Margin below labels */
+        font-size: small;
+        color: black;
+        font-weight: bold;
+        width: 100%;
+        text-align: left;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+input{
+    width: 90%; /* Full width */
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 20px; /* Space below inputs */
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+}
+.form-div{
+    width: 100%;
+    height: 100vh;
+    background: rgba(134, 130, 130,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.add-button {
+    width: 50%; /* Full width */
+    padding: 10px; /* Padding inside button */
+    margin: auto;
+    background: linear-gradient(to bottom, #1aa4ce, #2772b7); /* Vertical linear gradient */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+#inner{
+    width: 100%;
+}
+.add-field{
+    margin: 20px;
+    text-decoration: solid;
+}
+footer {
+    text-align: center;
+    bottom: 8px;
+    font-size: 14px;
+    position: relative;
+}
+.graph{
+    background-color: #fff;
+}
+.boom{
+    display: flex;
+  align-items: center; /* Vertically center if needed */
+  justify-content: space-between;
+  width: 100%;
+}
+.export{
+    text-decoration: none;
+    color: black;
+    font-size: 10;
+    background: linear-gradient(to bottom, #1aa4ce, #2772b7);
+    padding: 15px;
+}
+.export:hover{
+    background: linear-gradient(to bottom, #1aa4de, #2772b7);
+}

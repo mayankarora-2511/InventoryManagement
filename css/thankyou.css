@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white; /* Light background color */
+    margin: 0;
+    padding: 0;
+}
+.img{
+    height: 100px;
+    width: 100px;
+}
+.thankyou{
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+.thanks{
+    height: 250px;
+    width: 250px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: blue;
+}
